@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/group2" android:checkableBehavior="single">
+        <item android:id="@+id/action_all" android:checked="true" android:title="Tất Cả" app:showAsAction="never" />
+        <item android:id="@+id/item_rune_red" android:checked="false" android:title="Ngọc Đỏ" app:showAsAction="never" />
+        <item android:id="@+id/item_rune_yellow" android:checked="false" android:title="Ngọc Vàng" app:showAsAction="never" />
+        <item android:id="@+id/item_rune_blue" android:checked="false" android:title="Ngọc Xanh" app:showAsAction="never" />
+        <item android:id="@+id/item_rune_purple" android:checked="false" android:title="Ngọc Tím" app:showAsAction="never" />
+    </group>
+</menu>

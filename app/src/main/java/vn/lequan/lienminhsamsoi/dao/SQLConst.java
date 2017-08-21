@@ -1,0 +1,46 @@
+package vn.lequan.lienminhsamsoi.dao;
+
+public class SQLConst {
+    public static final String KEY_CHIMANG = " AND tags like '%CriticalStrike%' ";
+    public static final String KEY_DOKHOIDAU = "AND (tags like '%Jungle%' OR tags like '%Lane%')";
+    public static final String KEY_DUONG = " AND tags like '%Lane%' ";
+    public static final String KEY_END = " ORDER BY goldTotal ASC";
+    public static final String KEY_GIAP = " AND tags like '%Armor%' ";
+    public static final String KEY_GIAY = " AND tags like '%Boots%' AND tags NOT LIKE '%NonbootsMovement%' ";
+    public static final String KEY_HOICHIEU = " AND tags like '%CooldownReduction%' ";
+    public static final String KEY_HOIMAU = " AND tags like '%HealthRegen%' ";
+    public static final String KEY_HOINANGLUONG = " AND tags like '%ManaRegen%' ";
+    public static final String KEY_HUTMAU = " AND tags like '%LifeSteal%' ";
+    public static final String KEY_HUTMAUPHEP = " AND tags like '%SpellVamp%' ";
+    public static final String KEY_KHANGHIEUUNG = " AND tags like '%Tenacity%' ";
+    public static final String KEY_KHANGPHEP = " AND tags like '%SpellBlock%' ";
+    public static final String KEY_KICHHOAT = " AND tags like '%Active%' ";
+    public static final String KEY_LAMCHAM = " AND tags like '%Slow%' ";
+    public static final String KEY_LOITUCVANG = " AND tags like '%GoldPer%' ";
+    public static final String KEY_MAU = " AND tags like '%Health%' ";
+    public static final String KEY_NANGLUONG = " AND tags like '%Mana%' ";
+    public static final String KEY_PHUKIEN = " AND tags like '%Vision%' ";
+    public static final String KEY_RUNG = " AND tags like '%Jungle%' ";
+    public static final String KEY_SATTHUONG = " AND tags like '%Damage%' ";
+    public static final String KEY_SORT_ASC = "ASC";
+    public static final String KEY_SORT_DESC = "DESC";
+    public static final String KEY_SUCMANHPHEPTHUAT = " AND tags like '%SpellDamage%' ";
+    public static final String KEY_TANGTOCDOCHAY = " AND tags like '%NonbootsMovement%' ";
+    public static final String KEY_TIEUTHU = " AND tags like '%Consumable%' ";
+    public static final String KEY_TOCDODANH = " AND tags like '%AttackSpeed%' ";
+    public static final String KEY_WHERE_CHAMPID = "WHERE champId = ?";
+    public static final String KEY_XUYENGIAP = " AND tags like '%ArmorPenetration%' ";
+    public static final String KEY_XUYENKHANGPHEP = " AND tags like '%MagicPenetration%' ";
+    public static final String SQL_SELECT_ITEM_INTO_AND_FROM = "SELECT itemId,goldTotal, \"from\", \"into\" FROM item WHERE itemId = ? ";
+    public static final String SQL_SELECT_ITEM_RECOMMEND = "SELECT a.itemId, a.count, b.goldTotal\nFROM item_recommended a INNER JOIN item b ON a.itemId = b.itemId\nWHERE a.map = 'SR' AND a.mode = 'CLASSIC' AND champId = ? AND blockIndex = ? ";
+    public static final String SQL_SELECT_ITEM_WITH_ID = "SELECT itemId,name,goldBase,description,goldTotal,\"from\",\"into\" FROM item WHERE itemId = ? ";
+    public static final String SQL_SELECT_LIST_BUILD = "SELECT * FROM champion_build ";
+    public static final String SQL_SELECT_LIST_CHAMPION = "SELECT name,champId FROM champion ORDER BY name";
+    public static final String SQL_SELECT_LIST_CHAMPION_TAG = "SELECT a.name, b.champId  FROM champion a INNER JOIN champion_tag b ON a.champId = b.champId AND b.tag = ? ";
+    public static final String SQL_SELECT_LIST_ITEM = "SELECT itemId,name,goldBase,description,goldTotal,\"from\",\"into\" FROM item WHERE maps LIKE ? AND tags <> '[]' ORDER BY goldTotal ASC";
+    public static final String SQL_SELECT_LIST_ITEM_SORT = "SELECT itemId,name,goldBase,description,goldTotal,\"from\",\"into\" FROM item WHERE maps LIKE ? AND tags <> '[]' ";
+    public static final String SQL_SELECT_LIST_RUNE = "SELECT itemid, name, description, image FROM runes ";
+    public static final String SQL_SELECT_PASSIVE = "SELECT a.champId,a.name,a.description,b.full \nFROM spell_passive a INNER JOIN image_passive b ON a.champId = b.champId\nWHERE a.champId = ?";
+    public static final String SQL_SELECT_SPELL_HELP = "SELECT * FROM summoner";
+    public static final String SQL_SORT_CHAMPION = "SELECT a.champId,a.name,b.\"release\"\nFROM champion a \nINNER JOIN tips_counter b ON a.champId = b.champId \nORDER BY b.\"release\" ";
+}

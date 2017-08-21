@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/appbar"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="fill_parent"
+                android:layout_height="?actionBarSize"
+                android:background="?colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:id="@+id/root_view"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/appbar"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_info_champion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/background">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_player_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10.0dip"
+                            android:text="MamTomNB"
+                            android:textColor="#ff7eb6b7"
+                            android:textSize="20.0sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10.0dip"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/layout_champ"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/img_champion_view"
+                                android:layout_width="60.0dip"
+                                android:layout_height="60.0dip"
+                                android:layout_centerHorizontal="true"
+                                android:padding="1.0dip"
+                                android:src="@drawable/ahri"
+                                app:civ_border_color="@color/abiliti_name"
+                                app:civ_border_width="1.0dip" />
+
+                            <TextView
+                                android:id="@+id/tv_champion_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img_champion_view"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5.0dip"
+                                android:background="@drawable/background_radius"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1"
+                                android:paddingEnd="3.0dip"
+                                android:paddingStart="3.0dip"
+                                android:text="Ahri" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/linearLayout"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:id="@+id/kda"
+                                android:layout_width="20.0dip"
+                                android:layout_height="20.0dip"
+                                android:src="@drawable/kill" />
+
+                            <TextView
+                                android:id="@+id/tv_kda"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/kda"
+                                android:layout_margin="2.0dip"
+                                android:layout_toEndOf="@+id/kda"
+                                android:text="10/5/21" />
+
+                            <ImageView
+                                android:id="@+id/creep"
+                                android:layout_width="20.0dip"
+                                android:layout_height="20.0dip"
+                                android:layout_below="@+id/kda"
+                                android:src="@drawable/minion" />
+
+                            <TextView
+                                android:id="@+id/tv_creep"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/creep"
+                                android:layout_margin="2.0dip"
+                                android:layout_toEndOf="@+id/creep"
+                                android:text="123" />
+
+                            <ImageView
+                                android:id="@+id/gold"
+                                android:layout_width="20.0dip"
+                                android:layout_height="20.0dip"
+                                android:layout_below="@+id/creep"
+                                android:src="@drawable/ic_gold" />
+
+                            <TextView
+                                android:id="@+id/tv_gold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/gold"
+                                android:layout_margin="2.0dip"
+                                android:layout_toEndOf="@+id/gold"
+                                android:text="15.041" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/img_ranked"
+                            android:layout_width="0.0dip"
+                            android:layout_height="80.0dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="20.0dip"
+                            android:layout_weight="1.0"
+                            android:src="@drawable/challenger" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/champ_detail_contaiter"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dip" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/layout_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_info_champion"
+                android:orientation="horizontal"
+                android:padding="5.0dip">
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.5">
+
+                    <TextView
+                        android:id="@+id/tv_result_team_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_gold_team_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/ic_gold"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ic_gold"
+                        android:layout_width="15.0dip"
+                        android:layout_height="15.0dip"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_gold" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/kill" />
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.5">
+
+                    <TextView
+                        android:id="@+id/tv_gold_team_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/ic_gold_2"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_result_team_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text=""
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ic_gold_2"
+                        android:layout_width="15.0dip"
+                        android:layout_height="15.0dip"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_gold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_header"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_view_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:overScrollMode="never" />
+
+                <TextView
+                    android:id="@+id/txt_VS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="VS"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_view_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:overScrollMode="never" />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_bans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_info"
+                android:layout_marginTop="5.0dip"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/background"
+                app:contentPadding="5.0dip">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcl_ban_team1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/layout_info"
+                android:layout_marginTop="5.0dip"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/background"
+                app:contentPadding="5.0dip">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcl_ban_team2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_info"
+            fontPath="font/Roboto-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/root_view"
+            android:padding="10dp"
+            android:text="Bảng Bổ Trợ"
+            android:textColor="#ff7eb6b7"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bangbotro"
+            android:layout_width="fill_parent"
+            android:layout_height="350.0dip"
+            android:layout_below="@+id/title_info" />
+
+        <TextView
+            android:id="@+id/title_ngocbotro"
+            fontPath="font/Roboto-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bangbotro"
+            android:padding="10dp"
+            android:text="Ngọc Bổ Trợ"
+            android:textColor="#ff7eb6b7"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ngoibotro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_ngocbotro"
+            android:paddingBottom="20dp" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

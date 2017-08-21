@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/rl_custom_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/boder_background_popup"
+              android:gravity="center"
+              android:minWidth="300dp"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="20dp"
+        android:text="Đánh Giá Ứng Dụng !"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="Hãy giúp chúng tôi đánh giá ứng dụng để có những cập nhật mới nhất"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_xemsau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:drawableLeft="@drawable/icon_store"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="Đánh GIá"
+        android:textAllCaps="true"
+        android:textColor="#15ff00"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/txt_chiase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:drawableLeft="@drawable/ic_share_black_24dp"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="Chia sẽ"
+        android:textAllCaps="true"
+        android:textColor="#4365ec"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/txt_yeuthich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="Nhắc tôi sau"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+
+    <TextView
+        android:id="@+id/txt_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="Bỏ qua"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+</LinearLayout>

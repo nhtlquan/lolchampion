@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "441475529879",
+    "firebase_url": "https://lien-minh-43abc.firebaseio.com",
+    "project_id": "lien-minh-43abc",
+    "storage_bucket": "lien-minh-43abc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441475529879:android:8ea9d4b7e35539d6",
+        "android_client_info": {
+          "package_name": "vn.lequan.lienminhsamsoi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441475529879-3q9aqgtbt9gjkgk91g7l3be46h0soifk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNEg4N04uxcOlQin1AOq82Vx1JVWS42c0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

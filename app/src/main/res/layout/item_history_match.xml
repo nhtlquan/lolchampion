@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="5.0dip"
+    android:id="@+id/card_view"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:layout_marginStart="5.0dip"
+    android:layout_marginTop="5.0dip"
+    app:cardBackgroundColor="#66000000">
+
+    <RelativeLayout
+        android:id="@+id/root_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip">
+
+        <RelativeLayout
+            android:id="@+id/layout_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7.0dip">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_champion"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:src="@drawable/ahri"
+                app:civ_border_color="@color/abiliti_name"
+                app:civ_border_width="1.0dip" />
+
+            <TextView
+                android:id="@+id/tv_lever"
+                android:layout_width="17.0dip"
+                android:layout_height="17.0dip"
+                android:layout_alignBottom="@+id/img_champion"
+                android:layout_alignStart="@+id/img_champion"
+                android:background="@drawable/badge_circle"
+                android:gravity="center"
+                android:padding="2.0dip"
+                android:text="13"
+                android:textColor="@color/white"
+                android:textSize="10.0sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/img_champion"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/img_spellD"
+                    android:layout_width="17.0dip"
+                    android:layout_height="17.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@drawable/image_item_boder"
+                    android:padding="1.0dip"
+                    android:src="@drawable/tocbien" />
+
+                <ImageView
+                    android:id="@+id/img_spellF"
+                    android:layout_width="17.0dip"
+                    android:layout_height="17.0dip"
+                    android:layout_alignTop="@+id/img_spellD"
+                    android:layout_toEndOf="@+id/img_spellD"
+                    android:background="@drawable/image_item_boder"
+                    android:padding="1.0dip"
+                    android:src="@drawable/thieudot" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/layout_img"
+            android:layout_marginStart="5.0dip"
+            android:layout_toEndOf="@+id/layout_img">
+
+            <TextView
+                android:id="@+id/tv_type_match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xếp hạng"
+                android:textColor="@color/champion_name"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_kda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_type_match"
+                android:text="19/0/10"
+                android:textSize="12.0sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_kda"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/gold"
+                    android:layout_width="15.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_gold" />
+
+                <TextView
+                    android:id="@+id/tv_count_gold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/gold"
+                    android:text="30k"
+                    android:textColor="@color/gold"
+                    android:textSize="12.0sp" />
+
+                <ImageView
+                    android:id="@+id/minion"
+                    android:layout_width="15.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignStart="@+id/gold"
+                    android:layout_below="@+id/gold"
+                    android:layout_marginLeft="5.0dip"
+                    android:src="@drawable/minion" />
+
+                <TextView
+                    android:id="@+id/tv_count_minion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/minion"
+                    android:layout_marginStart="5.0dip"
+                    android:layout_toEndOf="@+id/minion"
+                    android:text="229"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_duration_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5.0dip"
+                android:text="40:22" />
+
+            <TextView
+                android:id="@+id/tv_duration_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/tv_duration_game"
+                android:layout_marginEnd="5.0dip"
+                android:text="9 giờ trước"
+                android:textColor="@color/black"
+                android:textSize="12.0sp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcl_item_build"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_info"
+            android:layout_marginStart="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_toEndOf="@+id/layout_img" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rcl_item_build"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5.0dip"
+            android:text="THẮNG"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

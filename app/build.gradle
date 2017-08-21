@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "vn.lequan.lienminhsamsoi"
+        minSdkVersion 19
+        vectorDrawables.useSupportLibrary = true
+        targetSdkVersion 23
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        jumboMode = true
+    }
+    repositories {
+        mavenCentral()
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
+    compile files('libs/volley.jar')
+    compile project(':libsmilestudio')
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:retrofit-converters:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:retrofit-converters:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.facebook.android:facebook-android-sdk:4.15.0'
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.google.firebase:firebase-ads:11.0.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.github.bumptech.glide:glide:3.8.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'org.jsoup:jsoup:1.10.3'
+    compile 'fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar'
+    compile 'com.j256.ormlite:ormlite-core:5.0'
+    compile 'com.j256.ormlite:ormlite-android:5.0'
+    compile 'com.google.firebase:firebase-database:11.0.1'
+    compile 'com.firebaseui:firebase-ui:2.0.1'
+    compile 'com.google.android.gms:play-services-analytics:11.0.1'
+    compile 'com.clough.android.androiddbviewer:androiddbviewer:1.0.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.1'
+    compile 'com.ogaclejapan.smarttablayout:utils-v4:1.6.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'fm.jiecao:jiecaovideoplayer:5.8.1'
+    testCompile 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'
+

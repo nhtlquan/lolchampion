@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_item_runes"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_margin="10.0dip"
+        android:src="@drawable/aatrox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_toEndOf="@+id/img_item_runes"
+        android:text="Greater Mark of Attack Damage +0.95 attack damage"
+        android:textColor="@color/white" />
+</RelativeLayout>

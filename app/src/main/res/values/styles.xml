@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.PopupOverlay" parent="@style/ThemeOverlay.AppCompat.Light" />
+    <style name="MyViewIndicator">
+        <item name="android:background">@color/background</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+        <item name="android:layout_marginStart">30.0dip</item>
+        <item name="android:layout_marginEnd">30.0dip</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="item_checkbox">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">3.0dip</item>
+    </style>
+    <style name="item_tieude">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginTop">3.0dip</item>
+    </style>
+    <style name="abilities_detail">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">3.0dip</item>
+    </style>
+    <style name="abilities_name">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">@color/abiliti_name</item>
+    </style>
+    <style name="button_add">
+        <item name="android:textSize">8.0sp</item>
+        <item name="android:background">@android:drawable/ic_menu_add</item>
+        <item name="android:layout_width">50.0dip</item>
+        <item name="android:layout_height">50.0dip</item>
+    </style>
+    <style name="cardStyle">
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="cost_cooldown_range">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="layout_abilities">
+        <item name="android:layout_margin">10.0dip</item>
+    </style>
+    <style name="overview_textsmall">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="recycle_add_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">50.0dip</item>
+    </style>
+    <style name="title_name">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/abiliti_name</item>
+    </style>
+    <style name="tooltip_bubble_text">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">left</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">0.25</item>
+    </style>
+    <style name="xxxxxxx">
+        <item name="android:gravity">center</item>
+        <item name="android:text">________________________</item>
+    </style>
+    <style name="AppTheme.NoActionBar" parent="@style/AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme" parent="@style/Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transpace</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="MyDialog1" parent="@android:style/Theme.Dialog">
+    <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    <item name="android:gravity">center</item>
+</style>
+
+    <style name="FullscreenActionBarStyle" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+    <style name="FullscreenTheme" parent="@style/AppTheme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="metaButtonBarStyle">?android:buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:buttonBarButtonStyle</item>
+    </style>
+    <style name="AlertDialogCustom" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">#ff000000</item>
+        <item name="android:textSize">16.0sp</item>
+    </style>
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_weak"
+            style="@style/cardStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            app:cardBackgroundColor="@color/background">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/aa"
+                    style="@style/title_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weak_against" />
+
+                <GridView
+                    android:id="@+id/gridview_weak"
+                    android:layout_width="fill_parent"
+                    android:layout_height="160.0dip"
+                    android:numColumns="5"
+                    android:verticalSpacing="5.0dip" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_strong"
+            style="@style/cardStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/background">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bb"
+                    style="@style/title_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strong_against" />
+
+                <GridView
+                    android:id="@+id/gridview_strong"
+                    android:layout_width="fill_parent"
+                    android:layout_height="160.0dip"
+                    android:numColumns="5"
+                    android:verticalSpacing="5.0dip" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/cardStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/background">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/a"
+                    style="@style/title_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/if_usage" />
+
+                <TextView
+                    android:id="@+id/guide_tv_4me"
+                    style="@style/abilities_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3.0dip" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/cardStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/background">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/b"
+                    style="@style/title_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/if_non_usage" />
+
+                <TextView
+                    android:id="@+id/guide_tv_4you"
+                    style="@style/abilities_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3.0dip" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <include layout="@layout/item_ad_navite_unit" />
+    </LinearLayout>
+</ScrollView>

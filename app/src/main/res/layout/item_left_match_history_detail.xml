@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:background="?selectableItemBackground"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3.0dip"
+        android:layout_weight="1"
+        app:cardBackgroundColor="#66000000">
+
+        <RelativeLayout
+            android:id="@+id/rootview_team_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5.0dip">
+
+            <RelativeLayout
+                android:id="@+id/root1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/layout_spell_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/img_spellD_1"
+                        android:layout_width="15.0dip"
+                        android:layout_height="15.0dip"
+                        android:background="@drawable/image_item_boder"
+                        android:padding="1.0dip"
+                        android:src="@drawable/tocbien" />
+
+                    <ImageView
+                        android:id="@+id/img_spellF_1"
+                        android:layout_width="15.0dip"
+                        android:layout_height="15.0dip"
+                        android:layout_below="@+id/img_spellD_1"
+                        android:background="@drawable/image_item_boder"
+                        android:padding="1.0dip"
+                        android:src="@drawable/tocbien" />
+                </RelativeLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_champion_team_1"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginEnd="5.0dip"
+                    android:layout_toStartOf="@+id/layout_spell_1"
+                    android:src="@drawable/ahri"
+                    app:civ_border_color="@android:color/holo_blue_dark"
+                    app:civ_border_width="1.0dip" />
+
+                <TextView
+                    android:id="@+id/tv_lever_team_1"
+                    android:layout_width="17.0dip"
+                    android:layout_height="17.0dip"
+                    android:layout_alignBottom="@+id/img_champion_team_1"
+                    android:layout_alignEnd="@+id/img_champion_team_1"
+                    android:background="@drawable/badge_circle"
+                    android:gravity="center"
+                    android:padding="1.0dip"
+                    android:text="13"
+                    android:textColor="@color/white"
+                    android:textSize="8.0sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5.0dip"
+                    android:layout_toStartOf="@+id/img_champion_team_1">
+
+                    <TextView
+                        android:id="@+id/tv_champion_name_team_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:maxLines="1"
+                        android:text="Ahri"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_player_name_team_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/tv_champion_name_team_1"
+                        android:maxLines="1"
+                        android:text="MamTomNB"
+                        android:textColor="#ff7eb6b7"
+                        android:textSize="12.0sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_kda_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/root1"
+                android:layout_marginTop="5.0dip"
+                android:text="12/2/23"
+                android:textSize="12.0sp" />
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcl_item_build"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_kda_1"
+                android:layout_below="@+id/root1"
+                android:layout_marginStart="5.0dip"
+                android:layout_marginTop="5.0dip"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_lane"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="" />
+
+</LinearLayout>

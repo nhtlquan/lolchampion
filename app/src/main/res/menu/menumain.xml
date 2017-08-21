@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/group2" android:checkableBehavior="single">
+        <item android:id="@+id/action_all" android:checked="true" android:title="Tất cả" app:showAsAction="never" />
+        <item android:id="@+id/action_satthu" android:checked="false" android:title="Sát thủ" app:showAsAction="never" />
+        <item android:id="@+id/action_dausi" android:checked="false" android:title="Đấu sĩ" app:showAsAction="never" />
+        <item android:id="@+id/action_phapsu" android:checked="false" android:title="Pháp sư" app:showAsAction="never" />
+        <item android:id="@+id/action_xathu" android:checked="false" android:title="Xạ thủ" app:showAsAction="never" />
+        <item android:id="@+id/action_hotro" android:checked="false" android:title="Hỗ trợ" app:showAsAction="never" />
+        <item android:id="@+id/action_dodon" android:checked="false" android:title="Đỡ đòn" app:showAsAction="never" />
+    </group>
+    <item android:icon="@android:drawable/ic_menu_search" android:id="@+id/action_search" android:title="Search" app:showAsAction="always" app:actionViewClass="android.support.v7.widget.SearchView" />
+</menu>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="10.0">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="6.0"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="2.0dip"
+                android:background="@color/background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_all"
+                    style="@style/item_tieude"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5.0dip"
+                    android:paddingTop="5.0dip"
+                    android:text="TẤT CẢ" />
+
+                <TextView
+                    android:id="@+id/tv_khoidau"
+                    style="@style/item_tieude"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TRANG BỊ KHỞI ĐẦU" />
+
+                <CheckBox
+                    android:id="@+id/item_rung"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rừng" />
+
+                <CheckBox
+                    android:id="@+id/item_duong"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đường" />
+
+                <TextView
+                    android:id="@+id/tv_dungcu"
+                    style="@style/item_tieude"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DỤNG CỤ" />
+
+                <CheckBox
+                    android:id="@+id/item_tieuthu"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiêu Thụ" />
+
+                <CheckBox
+                    android:id="@+id/item_loitucvang"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loitucvang" />
+
+                <CheckBox
+                    android:id="@+id/item_phukien"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tamnhin" />
+
+                <TextView
+                    android:id="@+id/tv_phongngu"
+                    style="@style/item_tieude"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PHÒNG NGỰ" />
+
+                <CheckBox
+                    android:id="@+id/item_giap"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Giáp" />
+
+                <CheckBox
+                    android:id="@+id/item_mau"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Máu" />
+
+                <CheckBox
+                    android:id="@+id/item_hoimau"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hồi máu" />
+
+                <CheckBox
+                    android:id="@+id/item_khangphep"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kháng Phép" />
+
+                <TextView
+                    android:id="@+id/tv_tancong"
+                    style="@style/item_tieude"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TẤN CÔNG" />
+
+                <CheckBox
+                    android:id="@+id/item_tocdodanh"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tốc Độ Đánh" />
+
+                <CheckBox
+                    android:id="@+id/item_chimang"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đánh Chí Mạng" />
+
+                <CheckBox
+                    android:id="@+id/item_satthuong"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sát Thương" />
+
+                <CheckBox
+                    android:id="@+id/item_hutmau"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hút Máu" />
+
+                <TextView
+                    android:id="@+id/tv_phepthuat"
+                    style="@style/item_tieude"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PHÉP THUẬT" />
+
+                <CheckBox
+                    android:id="@+id/item_hoichieu"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Giảm Thời Gian Hồi Chiêu" />
+
+                <CheckBox
+                    android:id="@+id/item_nangluong"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Năng Lượng" />
+
+                <CheckBox
+                    android:id="@+id/item_hoinangluong"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hồi Năng Lượng" />
+
+                <CheckBox
+                    android:id="@+id/item_sucmanhphepthuat"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sức Mạnh Phép Thuật" />
+
+                <TextView
+                    android:id="@+id/tv_dichuyen"
+                    style="@style/item_tieude"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:text="DI CHUYỂN" />
+
+                <CheckBox
+                    android:id="@+id/item_giay"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Giày" />
+
+                <CheckBox
+                    android:id="@+id/item_tangtocdokhac"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tăng tốc độ chạy" />
+
+                <TextView
+                    android:id="@+id/tv_other"
+                    style="@style/item_tieude"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KHÁC" />
+
+                <CheckBox
+                    android:id="@+id/item_khanghieuung"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kháng Hiệu Ứng" />
+
+                <CheckBox
+                    android:id="@+id/item_hutmauphep"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hút Máu Phép" />
+
+                <CheckBox
+                    android:id="@+id/item_lamcham"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Làm Chậm" />
+
+                <CheckBox
+                    android:id="@+id/item_kichhoat"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kích hoạt" />
+
+                <CheckBox
+                    android:id="@+id/item_xuyenkhangphep"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Xuyên Kháng Phép" />
+
+                <CheckBox
+                    android:id="@+id/item_xuyengiap"
+                    style="@style/item_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Xuyên Giáp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="2.0dip"
+            android:layout_weight="4.0"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <RelativeLayout
+            android:id="@+id/fragment_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

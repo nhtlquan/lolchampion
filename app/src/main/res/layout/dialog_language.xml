@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/cardview_dark_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Language" android:layout_marginStart="5.0dip" />
+    <android.support.v7.widget.RecyclerView android:id="@+id/rcl_language" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:layout_gravity="end" android:id="@+id/btn_cancel" android:background="@color/cardview_dark_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancel" android:layout_marginEnd="10.0dip" />
+</LinearLayout>

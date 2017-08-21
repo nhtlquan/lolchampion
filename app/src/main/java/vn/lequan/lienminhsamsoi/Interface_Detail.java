@@ -1,0 +1,1 @@
+package vn.lequan.lienminhsamsoi;import vn.lequan.lienminhsamsoi.models.MatchDetail.MatchParticipant;/** * Created by NhtlQuan on 4/20/2017. */public interface Interface_Detail {    void setDetailt(MatchParticipant matchParticipant);}

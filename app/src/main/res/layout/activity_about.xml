@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_about"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            android:background="?colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/setting_pading"
+            android:paddingStart="@dimen/setting_pading">
+
+            <TextView
+                android:id="@+id/version_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phiên bản ứng dụng"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sub_version_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/version_app"
+                android:text="1.0"
+                android:textColor="@color/secondText" />
+        </RelativeLayout>
+
+        <View style="@style/MyViewIndicator" />
+
+        <RelativeLayout
+            android:id="@+id/item_language"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/setting_pading"
+            android:paddingStart="@dimen/setting_pading">
+
+            <TextView
+                android:id="@+id/version_database"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phiên bản database"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sub_version_database"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/version_database"
+                android:text="6.19.1"
+                android:textColor="@color/secondText" />
+        </RelativeLayout>
+
+        <View style="@style/MyViewIndicator" />
+
+        <RelativeLayout
+            android:id="@+id/item_update_date"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/setting_pading"
+            android:paddingStart="@dimen/setting_pading">
+
+            <TextView
+                android:id="@+id/last_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cập nhật lần cuối"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sub_last_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/last_update"
+                android:text="29/03/2016 12:65:00"
+                android:textColor="@color/secondText" />
+        </RelativeLayout>
+
+        <View style="@style/MyViewIndicator" />
+
+        <RelativeLayout
+            android:id="@+id/ykien_donggop"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/setting_pading"
+            android:paddingStart="@dimen/setting_pading">
+
+            <TextView
+                android:id="@+id/gopy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Góp ý"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sub_gopy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gopy"
+                android:text="Cho chúng tôi biết ý kiến của bạn."
+                android:textColor="@color/secondText" />
+        </RelativeLayout>
+
+        <View style="@style/MyViewIndicator" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:padding="5.0dip">
+
+    <ImageView
+        android:id="@+id/img_image"
+        android:layout_width="90.0dip"
+        android:layout_height="90.0dip"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_toRightOf="@+id/img_image"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Hướng dẫn cách tạo Lộ Trình Đi Rừng đơn giản"
+        android:textColor="@color/white"
+        android:textSize="16.0sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_title"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="5.0dip"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Dù bạn ăn cỏ hay ăn thịt thì Lộ Trình Đi Rừng vẫn rất quan trọng."
+        android:textColor="@color/secondText"
+        android:textSize="12.0sp" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_description"
+        android:layout_marginRight="10.0dip"
+        android:textColor="@color/secondText"
+        android:textSize="12.0sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_image"
+        android:layout_marginTop="5.0dip"
+        android:src="@drawable/line" />
+</RelativeLayout>

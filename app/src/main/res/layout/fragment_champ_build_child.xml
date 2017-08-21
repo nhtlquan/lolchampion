@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_mlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/container_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view"
+            android:layout_width="fill_parent"
+            android:layout_height="350.0dip"
+            android:layout_marginBottom="10.0dip" />
+
+        <android.support.v7.widget.CardView
+            style="@style/cardStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/background">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_ngocbotro"
+                    style="@style/title_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3.0dip"
+                    android:text="@string/ngoc_bo_tro" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcl_build_runes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <include layout="@layout/item_ad_navite_unit" />
+
+        <android.support.v7.widget.CardView
+            style="@style/cardStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/background">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip">
+
+                <TextView
+                    android:id="@+id/title_trangbi"
+                    style="@style/title_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3.0dip"
+                    android:text="@string/trang_b_ph_p_b_tr" />
+
+                <TextView
+                    android:id="@+id/title_phepbotro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_trangbi"
+                    android:layout_marginTop="5.0dip"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="12.0sp" />
+
+                <ImageView
+                    android:id="@+id/img_spellD"
+                    android:layout_width="48.0sp"
+                    android:layout_height="48.0sp"
+                    android:layout_below="@+id/title_phepbotro"
+                    android:layout_margin="1.0dip"
+                    android:background="@drawable/image_item_boder"
+                    android:contentDescription="@null"
+                    android:padding="1.0dip"
+                    android:src="@drawable/untitled" />
+
+                <ImageView
+                    android:id="@+id/img_spellF"
+                    android:layout_width="48.0sp"
+                    android:layout_height="48.0sp"
+                    android:layout_below="@+id/title_phepbotro"
+                    android:layout_margin="1.0dip"
+                    android:layout_toEndOf="@+id/img_spellD"
+                    android:background="@drawable/image_item_boder"
+                    android:contentDescription="@null"
+                    android:padding="1.0dip"
+                    android:src="@drawable/untitled" />
+
+                <TextView
+                    android:id="@+id/tv_start_item_build"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_spellD"
+                    android:layout_marginTop="5.0dip"
+                    android:textColor="@color/white"
+                    android:textSize="12.0sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcl_start_build"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_start_item_build"
+                    android:layout_marginRight="5.0dip" />
+
+                <ImageView
+                    android:id="@+id/img_item"
+                    android:layout_width="48.0sp"
+                    android:layout_height="48.0sp"
+                    android:layout_alignBottom="@+id/rcl_start_build"
+                    android:layout_margin="1.0dip"
+                    android:layout_toEndOf="@+id/rcl_start_build"
+                    android:background="@drawable/image_item_boder"
+                    android:contentDescription="@null"
+                    android:padding="1.0dip"
+                    android:src="@drawable/untitled" />
+
+                <TextView
+                    android:id="@+id/tv_core_item_build"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rcl_start_build"
+                    android:layout_marginTop="5.0dip"
+                    android:textColor="@color/white"
+                    android:textSize="12.0sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcl_core_build"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_core_item_build"
+                    android:layout_marginBottom="10.0dip" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/cardStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/background">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_congskill"
+                    style="@style/title_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3.0dip"
+                    android:text="@string/cong_skill" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcl_spell_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:facebook="http://schemas.android.com/apk/tools">
+    <com.facebook.login.widget.ProfilePictureView android:id="@+id/image_facebook" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="3.0dip" facebook:preset_size="small" />
+    <TextView android:textStyle="bold" android:textColor="#ff365899" android:id="@+id/tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="Nguyen Tan" android:layout_toRightOf="@+id/image_facebook" />
+    <TextView android:textColor="#ff1d2129" android:id="@+id/tv_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="asd ajsh dajsh djashdj hasjdh gajshdgash gdjah gsjdhagsjh djashd jashdj ahsjdh asjhd ajshd ahsdjah sjdhaj shdjas" android:layout_below="@+id/tv_username" android:layout_alignLeft="@+id/tv_username" />
+    <TextView android:textSize="10.0sp" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Hom qua 21-1-2014 12:34" android:layout_below="@+id/tv_body" android:layout_alignLeft="@+id/tv_body" />
+</RelativeLayout>
